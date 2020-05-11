@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# 顔画像学習プログラム(Chainer)(開発終了)
-
 import argparse as arg
 import os
 import sys
@@ -155,10 +151,6 @@ def create_dataset(data_dir):
     return train_set
     
 def main():
-    
-    # プログラム情報
-    print("Face Recognition train Program(CH) ver.4")
-    print("Last update date:    2020/03/12 (Stop development)\n")
     
     # コマンドラインオプション作成
     parser = arg.ArgumentParser(description='Face Recognition train Program(Chainer)')
