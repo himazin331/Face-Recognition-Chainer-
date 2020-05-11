@@ -49,7 +49,7 @@ class trainer(object):
     def __init__(self):
         
         # モデル構築
-        self.model = L.Classifier(CNN(7))
+        self.model = L.Classifier(CNN(2))
         
         # 最適化手法のセットアップ
         self.optimizer = chainer.optimizers.Adam() # Adamアルゴリズム
