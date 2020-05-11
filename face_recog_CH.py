@@ -123,8 +123,7 @@ def main():
             face = gray[y:y + h, x:x + w]
             face = Image.fromarray(face)
             face = np.asarray(face.resize((32, 32)), dtype=np.float32)
-            face = face[:, :, np.newaxis]
-            recog_img = face.transpose(2, 0, 1)
+            recog_img = face[np.newaxis, :, :]
                     
             # 顔識別
             y = model.predictor(chainer.Variable(np.array([recog_img])))
