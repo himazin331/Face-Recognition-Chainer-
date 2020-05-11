@@ -129,13 +129,16 @@ def main():
             y = model.predictor(chainer.Variable(np.array([recog_img])))
             c = F.softmax(y).data.argmax()
             
+            # 分類したいクラスの分だけ記述してください
+            """
             if c == 0:
                 cv2.putText(frame, "Abe Sinzo",
                     p, cv2.FONT_HERSHEY_SIMPLEX, 1.0, green, thickness=2)     
             elif c == 1:
                 cv2.putText(frame, "Aso Taro",
                     p, cv2.FONT_HERSHEY_SIMPLEX, 1.0, green, thickness=2)    
-                
+            """    
+            
             cv2.imshow("frame", frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
