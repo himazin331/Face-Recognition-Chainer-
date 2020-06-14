@@ -21,10 +21,24 @@ OUT_PATH   : ./result (Default)
 GPU_ID     : -1 (Default) *Not GPU  
 ```
 
+**Output files**
+- face_recog.model
+ - Parameter file.
+- accuracy.png
+ - A graph plotting prediction accuracy.
+- loss.png
+ - A graph plotting loss values.
+- cg.dot
+ - Structure of the network model (DOT format).
+- log
+ - History of loss values and prediction accuracy (JSON format).
+- snapshot_iter_XXX
+ - Parameter and other snapshots.
+
 **NOTE**
 ```
     for c in os.listdir(data_dir):
-        d = os.path.join(data_dir, c)
+        d = os.path.join(data_dir, c)A graph plotting loss.
         print("Number of image in a directory \"{}\": {}".format(c, len(os.listdir(d))))
 ```
 The above process accounts for how many training data are available.  
