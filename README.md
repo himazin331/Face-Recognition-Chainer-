@@ -13,12 +13,13 @@ ___
 **Command**  
 ```
 python face_recog_train_CH.py -d <DIR_NAME> -e <EPOCH_NUM> -b <BATCH_SIZE>
-                                                          (-o <OUT_PATH> -g <GPU_ID>)                                                 
-```
+                                                          (-o <OUT_PATH> -g <GPU_ID>)   
+							  
 EPOCH_NUM  : 15 (Default)  
 BATCH_SIZE : 32 (Default)  
 OUT_PATH   : ./result (Default)  
 GPU_ID     : -1 (Default) *Not GPU  
+```
 
 **Output files**
 - face_recog.model
