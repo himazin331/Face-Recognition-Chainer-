@@ -23,17 +23,17 @@ GPU_ID     : -1 (Default) *Not GPU
 
 **Output files**
 - face_recog.model
- - Parameter file.
+	- Parameter file.
 - accuracy.png
- - A graph plotting prediction accuracy.
+	- A graph plotting prediction accuracy.
 - loss.png
- - A graph plotting loss values.
+	- A graph plotting loss values.
 - cg.dot
- - Structure of the network model (DOT format).
+	- Structure of the network model (DOT format).
 - log
- - History of loss values and prediction accuracy (JSON format).
+	- History of loss values and prediction accuracy (JSON format).
 - snapshot_iter_XXX
- - Parameter and other snapshots.
+	- Parameter and other snapshots.
 
 **NOTE**
 ```
