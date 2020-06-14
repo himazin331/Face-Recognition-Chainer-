@@ -58,7 +58,7 @@ Labels are assigned to the child directories in order from 0 to name.
 **NOTE**
 ```
     for c in os.listdir(data_dir):
-        d = os.path.join(data_dir, c)A graph plotting loss.
+        d = os.path.join(data_dir, c)
         print("Number of image in a directory \"{}\": {}".format(c, len(os.listdir(d))))
 ```
 The above process accounts for how many training data are available.  
