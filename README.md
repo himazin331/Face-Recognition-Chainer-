@@ -13,7 +13,7 @@ ___
 **Command**  
 ```
 python face_recog_train_CH.py -d <DIR_NAME> -e <EPOCH_NUM> -b <BATCH_SIZE>
-                                                           (-o <OUT_PATH> -g <GPU_ID>)                                                 
+                                                          (-o <OUT_PATH> -g <GPU_ID>)                                                 
 ```
 EPOCH_NUM  : 15 (Default)  
 BATCH_SIZE : 32 (Default)  
@@ -48,7 +48,6 @@ train_data --- Class_A --- img1.jpg
                         |- img2.jpg
 	                |- ...
 ```
-
 The command line argument (-d) specifies the parent directory (train_data in the example above).  
 Labels are assigned to the child directories in order from 0 to name.  
 (In the example above, Class_A is 0, Class_B is 1, and Class_C is 2)
